@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Exo_2 {
     public static void main(String[] args) {
         int[] tableauSource = new int[10];
@@ -14,9 +16,9 @@ public class Exo_2 {
             }
 
         }
-        for (int k : tableauDestination){
-//
-            System.out.println(k);
-        }
+        String strTabSour = Arrays.toString(tableauSource);
+        String strTabDest = Arrays.toString(tableauDestination);
+        System.out.println("tableauSource = " + strTabSour);
+        System.out.println("tableauDestination = " + strTabDest);
     }
 }

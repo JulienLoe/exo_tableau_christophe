@@ -6,19 +6,20 @@ public class Exo_3 {
         int max = Integer.MAX_VALUE;
         int min = Integer.MIN_VALUE;
         int indiceMax = 0;
+        int indiceMin = 0;
 
         for(int i = 0; i < tab.length; i++ ){
             if(tab[i] < max){
                 max = tab[i];
-                indiceMax = max;
+                indiceMax = i;
             }
             if(tab[i] > min ){
                 min = tab[i];
+                indiceMin = i;
             }
         }
 
-        System.out.println("La valeur maximale est " + max + "à l'indice " + indiceMax);
-        System.out.println(min);
+        System.out.println("La valeur maximale est " + min + " à l'indice " + indiceMin);
 
     }
 }
